@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*********************************** css for navbar ************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+.marl{
+  margin-left: auto;
+}
+.logo{
+  width: 12.03rem;
+  padding: 0rem;
+}
+nav a.nav-link{
+  color:white !important;
+  text-transform: uppercase ;
+}
+nav li:hover {
+  border-top: 2px solid tomato;
+}
