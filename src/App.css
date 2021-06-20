@@ -36,11 +36,35 @@
     transform: rotate(360deg);
   }
 }
+/************color platte ****************/
+:root{
+  --blue : #005581;
+  --l-blue: #72CDF4;
+  --gold: #ffd200;
+  --l-gold: #ffe552;
+  --red: #ee4b2b;
+  --white: #fff;
+  --gray : rgb(126, 126, 126);
+}
 
 
 /*********************************** css for navbar ************************************/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-
+*{
+  margin : 0px;
+  padding: 0px;
+  scroll-snap-type: y mandatory;
+}
+.sections{
+  position: relative;
+  margin-top: 5rem !important;
+  scroll-snap-type: y mandatory;
+}
+.sections > *{
+  scroll-snap-align: start;
+  height: calc(100vh - 5rem);
+  position: relative;
+}
 
 .marl{
   margin-left: auto;
@@ -50,9 +74,95 @@
   padding: 0rem;
 }
 nav a.nav-link{
-  color:white !important;
+  color:var(--white) !important;
   text-transform: uppercase ;
 }
 nav li:hover {
   border-top: 2px solid tomato;
+}
+
+
+/**************************** Header **********************************/
+
+nav{
+  z-index: 2;
+  /*height: 5.00rem !important;*/
+  position: fixed ;
+  
+}
+.header-wraper {
+  position: relative;
+  background: url("./imgs/headerbg.jpg");
+  height: calc(100vh );
+  background-size: cover;
+  background-position: center;
+  margin-top: 5rem ;
+}
+@media (max-width : 480px){
+  .header-wraper{
+    position: relative;
+    background: url("./imgs/headerbg-ph.jpg");
+    height: calc(100vh );
+    background-size: cover;
+    background-position: center;
+    margin-top: 5rem ;
+  }
+}
+
+.main-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-info h1 {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+/************** typed text ***********/
+.typed-text {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/************** contct us button ***********/
+.btn-contactus {
+  border : 0.123rem solid var(--red);
+  text-decoration: none;
+  padding: 0.625rem;
+  font-size: 1.2rem;
+  margin-top: 0.7rem;
+  color: var(--white);
+}
+.btn-contactus:hover {
+  background-color: var(--red);
+  border : 0.123rem solid var(--red);
+  text-decoration: none;
+  padding: 0.625rem;
+  font-size: 1.2rem;
+  margin-top: 0.7rem;
+  color: var(--white) !important;
+  font-size: 1.3rem ;
+  transition-duration: 500ms;
+
+}
+
+/************* particals ********/
+
+.particles-container{
+position: absolute;
+height: 100vh;
+width: 100vw;
+z-index: 1;
 }
