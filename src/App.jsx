@@ -4,8 +4,9 @@ import Navbar from "./components/Navbar"
 import Header from "./components/Header"
 import Particles from "react-particles-js"
 import Aboutme from "./components/aboutme/Aboutme"
-import contectus from "./components/contectus/Contectus"
-import Contectus from "./components/contectus/Contectus";
+import Contectus from "./components/contectus/Contectus"
+import Portfolio from "./components/portfolio/Portfolio"
+import Services from "./components/services/Services"
 
 function App() {
   
@@ -38,6 +39,8 @@ function App() {
       <div className="sections">
         <Header></Header>
         <Aboutme></Aboutme>
+        <Portfolio></Portfolio>
+        <Services></Services>
         <Contectus></Contectus>
       </div>
     </>
