@@ -3,7 +3,7 @@ import './Contectus.css'
 
 const Contectus = () => {
     return (
-        <div class='contectus'>
+        <div class='contectus' id='contectus'>
             
         </div>
     )

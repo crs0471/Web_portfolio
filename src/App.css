@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+  display: none;
+}
 .App {
   text-align: center;
 }
@@ -54,6 +57,9 @@
   margin : 0px;
   padding: 0px;
   scroll-snap-type: y mandatory;
+}
+.example::-webkit-scrollbar {
+  display: none;
 }
 .sections{
   position: static;

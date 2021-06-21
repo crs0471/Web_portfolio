@@ -39,8 +39,8 @@ function App() {
       <div className="sections">
         <Header></Header>
         <Aboutme></Aboutme>
-        <Portfolio></Portfolio>
         <Services></Services>
+        <Portfolio></Portfolio>
         <Contectus></Contectus>
       </div>
     </>
