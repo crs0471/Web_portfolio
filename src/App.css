@@ -80,6 +80,7 @@
 .logo{
   width: 12.03rem;
   padding: 0rem;
+  border:0px;
 }
 nav a.nav-link{
   color:var(--white) !important;
