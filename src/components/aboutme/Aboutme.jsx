@@ -14,8 +14,8 @@ const Aboutme = () => {
                     <p className="text2">
                         Belongs form BTech.IT background. <br></br>
                         A dedicated and passionate web devloper and python devloper. <br/>
-                        Currently working alone but looking for people who can colobrate. <br/>  
-                        Love to code, Love to colobrate.                  </p>
+                        Currently working alone but looking for people who can collaborate. <br/>  
+                        Love to code, Love to collaborate.                  </p>
                 </div>
             </div>
         </div>
