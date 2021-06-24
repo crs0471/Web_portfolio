@@ -1,3 +1,156 @@
 .services{
-    background-color: hotpink;
+    background : url("./srbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.services>.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30vh;
+}
+.webdev-card{
+    border: 2px solid rgba(0, 0, 0, 0.781);
+    border-radius: 10px;
+    background-color: rgba(240, 255, 240, 0.685);
+    height: 300px;
+    width: 240px;
+    padding: 15px;
+}
+.head{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+.head::before{
+    content: "Web Devloping";
+}
+.image{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.image>img{
+    width: 100%;
+    opacity: 0.8;
+}
+.webdev-card>.detail::before{
+    content: " Providing good quality websites and API devloping services using js, php and python framework";
+    text-align: justify;
+}
+.pydev-card{
+    border: 2px solid rgba(0, 0, 0, 0.781);
+    border-radius: 10px;
+    background-color: rgba(240, 255, 240, 0.685);
+    height: 300px;
+    width: 240px;
+    padding: 15px;
+    margin-left: 10%;
+}
+.head{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+.pydev-card>.head::before{
+    content: "python Devloping";
+}
+.image{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.image>img{
+    width: 100%;
+    opacity: 0.8;
+}
+.pydev-card>.detail::before{
+    text-align: justify;
+    content: " Crating besu usefull application using python and it's libraies.";
+    
+}
+.pydev-card:hover,.webdev-card:hover{
+    transform: scale(1.02);
+    transition-duration: 500m;
+}
+.container>a{
+    text-decoration: none;
+    color: black;
+}
+.pydevlink{
+    margin-left: 20vh;
+}
+.container>h1{
+    text-align: center;
+    color: white;
+    width: 100
+}
+@media(max-width:641px){
+    .services{
+        background : url("./srbg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+    .services>.container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: auto;
+    }
+    .webdev-card{
+        border: 2px solid rgba(0, 0, 0, 0.781);
+        border-radius: 10px;
+        background-color: rgba(240, 255, 240, 0.685);
+        height: auto;
+        width: 100%;
+        padding: 15px;
+    }
+    .head{
+        text-align: center;
+        font-family: "Roboto";
+        font-size: medium;
+        font-weight: bold;
+        margin-top: 5px;
+        
+    }
+    .image{
+        height: 0;
+        width :0 ;
+    }
+    .image>img{
+        width: 100%;
+        opacity: 0.8;
+    }
+    .pydev-card{
+        border: 2px solid rgba(0, 0, 0, 0.781);
+        border-radius: 10px;
+        background-color: rgba(240, 255, 240, 0.685);
+        height: auto;
+        width: 100%;
+        padding: 15px;
+        margin : 0px;
+    }
+    .pydevlink{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
 }
